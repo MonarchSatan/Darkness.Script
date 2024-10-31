@@ -5,7 +5,7 @@
 storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 ```
 
-# Function
+# 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓
 
 * [sendPacket](#sendpacket)
 * [sendVariant](#sendvariant)
@@ -68,6 +68,6 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 
 `--°°--°°--°°--`
 
-# Function
+# 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓
 
 * sendPacket
