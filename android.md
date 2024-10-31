@@ -39,6 +39,7 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 * [getPlayerlist](#getplayerlist)
 * [getPlayerByNetID](#getplayerbynteid)
 * [AddHook](#addhook)
+* [gentaHook](#gentahook)
 * [removeHook](#removehook)
 * [removeHooks](#removehooks)
 * [sendWebhook](#sendwebhook)
