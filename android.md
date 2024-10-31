@@ -47,3 +47,21 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 * [getItemByName](#getitembyname)
 * [getCheat](#getcheat)
 * [toggleCheat](#togglecheat)
+
+# Structure
+
+* [tankPacketStruct](#tankpacketstruct)
+* [response](#response)
+* [camera](#camera)
+* [netAvatar](#netavatar)
+* [tile](#tile)
+* [tileExtra](#tileextra)
+* [world](#world)
+* [tileFlag](#tileflag)
+* [itemInfo](#iteminfo)
+* [worldObject](#worldobject)
+* [NPCList](#npclist)
+* [inventory](#inventory)
+* [vec2i/vec2f](#vec2i/vec2)
+* [vec3i/vec3f](#vec3i/vec3f)
+* [vec4i/vec4f](#vec4i/vec4f)
