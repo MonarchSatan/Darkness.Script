@@ -69,10 +69,11 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 
 `--°°--°°--°°--`
 
-# 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓
+# 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓 / 𝖒𝖊𝖙𝖍𝖔𝖉
 
 ### sendPacket
 * `sendPacket(int: type, str: packet)`
+
 
 Example:
 ```lua
@@ -210,3 +211,5 @@ Example:
 local extra = getExtraTile(0, 0)
 logToConsole('extra type: '.. extra.type)
 ```
+
+### getNpc
