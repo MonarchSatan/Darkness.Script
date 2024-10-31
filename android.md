@@ -1,4 +1,4 @@
-### ‹ GENTAHAX ANDROID LUA DOCS ›
+### ‹ GENTAHAX ANDROID DOCS ›
 
 * `Script File Path:`
 ```
