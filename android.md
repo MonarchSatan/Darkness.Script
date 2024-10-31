@@ -78,3 +78,135 @@ Example:
 ```lua
 sendPacket(2, 'action|input\n|text|hello from GENTA HAX!')
 ```
+
+### sendVariant
+* `sendVariant(variantlist_t: var, int: netId, int: delay)`
+
+Example:
+```lua
+var = {}
+var[0] = 'OnConsoleMessage'
+var[1] = 'hello world!'
+sendVariant(var, -1, 200)
+
+or
+
+sendVariant({ [0] = 'OnConsoleMessage', [1] = 'hello world! }, -1, 200)
+
+same
+
+sendVariant({ [0] = 'OnConsoleMessage', [1] = 'hello world! })
+```
+
+### sendPacketRaw
+* `sendPacketRaw(boolean: send_to_client, tankPacketStruct)
+
+Example:
+```lua
+sendPacketRaw(false,
+	{ type = 3,
+		value = 242,
+		punchx = math.floor(getLocal().pos.x / 32),
+		punchy = math.floor(getLocal().pos.y / 32) - 1,
+		x = getLocal().pos.x,
+		y = getLocal().pos.y }
+)
+```
+
+### sleep
+* `sleep(int: sleep_in_ms) -- milisecondtol`
+
+Example:
+```lua
+sleep(7740)
+```
+
+### doLog
+* `doLog(str: text)`
+
+Example:
+```lua
+doLog('gacor kang!')
+```
+
+### logToConsole
+* `logToConslole(str: text)`
+
+Example:
+```lua
+logToConsole('hello from genta hax!')
+```
+
+### callToast
+* `callToast(str: text, int: type)`
+`1 = Long Time`
+`0 = Short Time`
+
+Example:
+```lua
+callToast('GENTA7740', 1)
+```
+
+### doToast
+* `doToast(int: toastType, int: dissmissTimeInMilliSeconds, str: text)`
+
+Example:
+```lua
+gatau gweh ini blm nyoba :troll:
+```
+
+### findPath
+* `findPath(int: x, int: y)`
+
+Example:
+```lua
+findPath(0, 0)
+```
+
+### getLocal
+* `getLocal() -- no param`
+
+Example:
+```lua
+local myName = getLocal().name
+logToConsole('hello world, my name is '.. myName ..' !')
+```
+
+### getWorld
+* `getWorld() -- no param`
+
+Example:
+```lua
+local world = getWorld().name
+logToConsole('iam standing at '.. world ..' !')
+```
+
+### getTile
+* `getTile() -- no param`
+
+Example:
+```lua
+for _, tile in pairs(getTile()) do 
+if tile.fg == 242 then
+logToConsole('Found World Lock At : ('.. tile.pos.x ..', '.. tile.pos.y ..')')
+  end 
+end
+```
+
+### checkTile
+* `checkTile(int: x, int: y)`
+
+Example:
+```lua
+local tile = checkTile(0, 0)
+logToConsole('Fg ID : '.. tile.fg)
+```
+
+### getExtraTile
+* `getExtraTile(int: x, int: y)`
+
+Example:
+```lua
+local extra = getExtraTile(0, 0)
+logToConsole('extra type: '.. extra.type)
+```
