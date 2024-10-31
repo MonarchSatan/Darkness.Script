@@ -1,3 +1,3 @@
-### GENTAHAX - LUA - DOCUMENTATION
+### GENTAHAX-DOCUMENTATION
 
 * `Discord Server:` 
