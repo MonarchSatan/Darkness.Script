@@ -48,7 +48,7 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 * [getCheat](#getcheat)
 * [toggleCheat](#togglecheat)
 
-# Structure
+# 𝖘𝖙𝖗𝖚𝖈𝖙𝖚𝖗𝖊
 
 * [tankPacketStruct](#tankpacketstruct)
 * [response](#response)
