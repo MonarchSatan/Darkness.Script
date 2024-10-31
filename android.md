@@ -71,3 +71,9 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 # 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓
 
 ## sendPacket
+`sendPacket(int: type, str: packet)`
+
+Example:
+```lua
+sendPacket(2, 'action|input\n|text|hello from GENTA HAX!')
+```
