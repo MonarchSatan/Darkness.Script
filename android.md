@@ -75,8 +75,8 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 sending packet to server.
 
 **Properties:**
-* `int: type`: type packet.
-* `str: text`: text packet.
+* `type`: number type.
+* `textPacket`: string text packet.
 
 
 **Example:**
