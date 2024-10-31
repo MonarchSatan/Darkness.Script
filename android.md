@@ -65,3 +65,9 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 * [vec2i/vec2f](#vec2i/vec2)
 * [vec3i/vec3f](#vec3i/vec3f)
 * [vec4i/vec4f](#vec4i/vec4f)
+
+`--°°--°°--°°--`
+
+# Function
+
+* `sendPacket`
