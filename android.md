@@ -72,12 +72,11 @@ storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 # 𝖋𝖚𝖓𝖈𝖙𝖎𝖔𝖓 / 𝖒𝖊𝖙𝖍𝖔𝖉
 
 ### sendPacket
-sending packet to server.
 
 **Properties:**
 * `type`: number type.
-* `textPacket`: string text packet.
-
+* `text`: string text packet.
+* `sendPacket(int: type, str: text)
 
 **Example:**
 ```lua
@@ -85,6 +84,11 @@ sendPacket(2, 'action|input\n|text|hello from GENTA HAX!')
 ```
 
 ### sendVariant
+
+**Properties:**
+* `variantlist_t`: data type used to represent the variant
+* `net_id`: int netid 
+* `delay`: int sleep millisecond.
 * `sendVariant(variantlist_t: var, int: netId, int: delay)`
 
 Example:
@@ -104,6 +108,10 @@ sendVariant({ [0] = 'OnConsoleMessage', [1] = 'hello world! })
 ```
 
 ### sendPacketRaw
+
+**Properties:**
+* `boolean`: true / false
+* `tank_packet`: -
 * `sendPacketRaw(boolean: send_to_client, tankPacketStruct)
 
 Example:
@@ -119,6 +127,9 @@ sendPacketRaw(false,
 ```
 
 ### sleep
+
+**Properties:**
+* `int` sleep in millisecond
 * `sleep(int: sleep_in_ms) -- milisecondtol`
 
 Example:
@@ -127,6 +138,8 @@ sleep(7740)
 ```
 
 ### doLog
+
+**Properties:**
 * `doLog(str: text)`
 
 Example:
@@ -135,6 +148,8 @@ doLog('gacor kang!')
 ```
 
 ### logToConsole
+
+**Properties:**
 * `logToConslole(str: text)`
 
 Example:
@@ -143,9 +158,11 @@ logToConsole('hello from genta hax!')
 ```
 
 ### callToast
+
+**Properties:**
 * `callToast(str: text, int: type)`
-`1 = Long Time`
-`0 = Short Time`
+* `1`: Long Time
+* `0`: Short Time
 
 Example:
 ```lua
@@ -153,6 +170,11 @@ callToast('GENTA7740', 1)
 ```
 
 ### doToast
+
+**Properties:**
+* `int`
+* `int`
+* `text`
 * `doToast(int: toastType, int: dissmissTimeInMilliSeconds, str: text)`
 
 Example:
@@ -161,6 +183,8 @@ gatau gweh ini blm nyoba :troll:
 ```
 
 ### findPath
+
+**Properties:**
 * `findPath(int: x, int: y)`
 
 Example:
@@ -169,6 +193,7 @@ findPath(0, 0)
 ```
 
 ### getLocal
+
 * `getLocal() -- no param`
 
 Example:
@@ -178,6 +203,7 @@ logToConsole('hello world, my name is '.. myName ..' !')
 ```
 
 ### getWorld
+
 * `getWorld() -- no param`
 
 Example:
@@ -187,6 +213,7 @@ logToConsole('iam standing at '.. world ..' !')
 ```
 
 ### getTile
+
 * `getTile() -- no param`
 
 Example:
@@ -199,6 +226,8 @@ end
 ```
 
 ### checkTile
+
+**Properties:**
 * `checkTile(int: x, int: y)`
 
 Example:
@@ -208,6 +237,8 @@ logToConsole('Fg ID : '.. tile.fg)
 ```
 
 ### getExtraTile
+
+**Properties:**
 * `getExtraTile(int: x, int: y)`
 
 Example:
@@ -217,3 +248,12 @@ logToConsole('extra type: '.. extra.type)
 ```
 
 ### getNpc
+
+`getNpc() -- no param`
+
+Example:
+```lua
+for _, npc in pairs(getNpc()) do 
+logToConsole('type: '.. npc.type)
+end 
+```
