@@ -1,3 +1,3 @@
-### GentaHax - Lua - Docs!
+### ‹ GentaHax - Lua - Docs! ›
 
 * `Discord Server:` 
