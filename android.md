@@ -5,7 +5,7 @@
 storage/emulated/0/Android/media/GENTAHAX/Script/urScript.lua
 ```
 
-### Function
+# Function
 
 * [sendPacket](#sendpacket)
 * [sendVariant](#sendvariant)
