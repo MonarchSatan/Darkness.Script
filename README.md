@@ -4,6 +4,8 @@
 
 * `Windows Lua Docs:` 
 
-* `Android Lua Docs:` [
+
+* `Android Lua Docs:` 
+[
 ![Static Badge](https://img.shields.io/badge/AndroidDocs-click-blue)
 ](https://github.com/MonarchSatan/Lua-Docs/blob/main/android.md)
