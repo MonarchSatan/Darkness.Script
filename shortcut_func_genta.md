@@ -1,8 +1,9 @@
 * `--@shortcut_func purchase item in store gems.`
 
-* **api use:**
-`sendPacket`
+* `sendPacket`
+
 * **properties:**
+
 `int: type`
 `string: packet`
 
@@ -16,9 +17,10 @@ purchase('world_lock')
 
 * `--@shorcut_func get amount of item in inventory.`
 
-* **api use:**
-`getInventory`
+* `getInventory`
+
 * **properties:**
+
 `int: item`
 `int: amount`
 
