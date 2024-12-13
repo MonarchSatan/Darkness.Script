@@ -75,3 +75,32 @@ y = getLocal().pos.y
 })
 end 
 ```
+
+* `--@shorcut_func create ur own command in game!`
+
+```lua
+AddHook('OnTextPacket', 'S  x  T', function(__, str)
+if str:find('/hi') then
+logToConsole('hello world!')
+return true -- ?, biar ga command not found anjing
+end
+if str:find('/whome') then
+sendPacket(2, 'action|input\n|text|my name is `#@'.. getLocal().name)
+return true
+end
+if str:find('/whereme') then
+logToConsole('You Standing At: `9'.. getWorld().name ..' ('.. (math.floor(getLocal().pos.x / 32))..', '.. (math.floor(getLocal().pos.y / 32))..')')
+return true
+end
+if str:find('/mygems') then
+local gems = getLocal().gems
+if gems > 0 then
+logToConsole('i have '.. gems ..' gems!')
+else
+logToConsole('Saddly i not have any gems :(, can u donate me /troll')
+return true
+end
+end
+return false
+end )
+```
