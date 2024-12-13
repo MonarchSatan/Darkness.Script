@@ -47,3 +47,31 @@ return false
 end )
 ```
 
+* `--@shortcut_func  hit / ( place same as plant )`
+
+```lua
+-- u can use requestTileChange(int_x, int_y, int_value) instead.
+-- or:
+
+function hit(a, b)
+sendPacketRaw(false, {
+type = 3,
+value = 18,
+punchx = a,
+punchy = b,
+x = getLocal().pos.x,
+y = getLocal().pos.y
+})
+end 
+
+function place(a, b, value) -- its same as plant, u can use this too
+sendPacketRaw(false, {
+type = 3,
+value = value
+punchx = a,
+punchy = b,
+x = getLocal().pos.x
+y = getLocal().pos.y
+})
+end 
+```
