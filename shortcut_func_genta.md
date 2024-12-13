@@ -1,5 +1,11 @@
 * `--@shortcut_func purchase item in store gems.`
 
+* **api use:**
+`sendPacket`
+* **properties:**
+`int: type`
+`string: packet`
+
 ```lua
 function purchase(str)
 sendPacket(2, 'action|buy\nitem|'.. str)
@@ -9,6 +15,12 @@ purchase('world_lock')
 ```
 
 * `--@shorcut_func get amount of item in inventory.`
+
+* **api use:**
+`getInventory`
+* **properties:**
+`int: item`
+`int: amount`
 
 ```lua
 function getItemCount(int_item)
