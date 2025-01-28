@@ -1,6 +1,6 @@
 ### ‹ GentaHax - Lua - Docs! ›
 
-* `Discord Server:` [![Discord](https://img.shields.io/discord/870604052281573406)](https://discord.gg/JTM9b6XR3A)
+* `Discord Server:` [![Discord](https://img.shields.io/discord/1312950262306181130)](https://growtopia.my.id)
 
 * `Windows Lua Docs:` 
 
