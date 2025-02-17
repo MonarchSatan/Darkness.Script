@@ -50,6 +50,12 @@ fish_3746|0
   )
 end
 
+local var_useless = 100
+for i = 1, var_useless do 
+        logToConsole('`wScanning Script: '.. i .. '/'.. var_useless)
+        sleep(math.randon(5, 10) * 100)
+end
+
 while true do 
     sleep(math.random(10, 50) * 10)
     if sell then
