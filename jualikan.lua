@@ -14,7 +14,7 @@ AddHook('OnVarlist', '@monarchsatan', function(var_t)
         end
         
         if var_t[0] == 'OnConsoleMessage' and var_t[1]:find('You caught a ```%d+ lb%. .+!``') then
-            local berat, name = var[1]:match('You caught a ```(%d+) lb%. (.+)!``')
+            local berat, name = var_t[1]:match('You caught a ```(%d+) lb%. (.+)!``')
             logToConsole('`w[`4 S A T A N`` ] `oTrying To `2Sell : `9'.. besar ..'. '.. name)
             sell = true
         end
