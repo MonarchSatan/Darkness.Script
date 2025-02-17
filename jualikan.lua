@@ -53,7 +53,7 @@ end
 local var_useless = 100
 for i = 1, var_useless do 
         logToConsole('`wScanning Script: '.. i .. '/'.. var_useless)
-        sleep(math.random(5, 10) * 100)
+        sleep(math.random(5, 10))
 end
 logToConsole('`2Script Active``!')
 while true do 
