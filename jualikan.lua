@@ -1,3 +1,6 @@
+-- discord server: https://growtopiascript.my.id
+-- creator: @monatchsatan
+
 local tab_, sell = {}, false
 
 AddHook('OnVarlist', '@monarchsatan', function(var_t)
@@ -6,16 +9,16 @@ AddHook('OnVarlist', '@monarchsatan', function(var_t)
             for content in var_t[1]:gmatch('[^\n]+') do
                 if content:find('embed_data') then
                     local embed = { content:match('embed_data|([^|]+)|([^|]+)') }
-                    table.insert(tab_t, embed[1])
-                    table.insert(tab_t, embed[2])
+                    table.insert(tab_, embed[1])
+                    table.insert(tab_, embed[2])
                 end
             end
-            return true
+            -- return true
         end
         
         if var_t[0] == 'OnConsoleMessage' and var_t[1]:find('You caught a ```%d+ lb%. .+!``') then
             local berat, name = var_t[1]:match('You caught a ```(%d+) lb%. (.+)!``')
-            logToConsole('`w[`4 S A T A N`` ] `oTrying To `2Sell : `9'.. besar ..'. '.. name)
+            logToConsole('`w[`4 S A T A N`` ] `oTrying To `2Sell : `9'.. berat ..'. '.. name)
             sell = true
         end
         
@@ -50,20 +53,19 @@ fish_3746|0
   )
 end
 
-local var_useless = 100
-for i = 1, var_useless do 
-        logToConsole('`wScanning Script: '.. i .. '/'.. var_useless)
-        sleep(math.random(5, 10))
-end
 logToConsole('`2Script Active``!')
 while true do 
     sleep(math.random(10, 50) * 10)
     if sell then
+                sendPacket(
+                        2,
+                        'action|input\n|text|/sellfish')
+                sleep(500)
         sendPacket(
             2,
             createPacket('sellfish')
         )
-        logToConsole('`w[`4 S A T A N`` ] `2Success``!')
+        logToConsole('`w[`4 S A T A N`` ] `2Success `9Sell The Fish``!')
         sell = false
     end
     sleep(math.random(10, 50) * 10)
