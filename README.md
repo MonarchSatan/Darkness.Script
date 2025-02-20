@@ -4,5 +4,5 @@
 
 * `Custom API GENTAHAX Docs:` 
 [
-![Static Badge](https://img.shields.io/badge/CustomApi-click-blue)
+![Static Badge](https://img.shields.io/badge/CustomApi-click-red)
 ](https://github.com/MonarchSatan/Lua-Docs/blob/main/customapi.md)
