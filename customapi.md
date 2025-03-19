@@ -1,1 +1,24 @@
-## hello world!
+# `functions`
+
+* [sendPacket](#sendpacket)
+* [sendPacketRaw(#sendpacketraw)
+* [sendVariant(#sendvariant)
+* [doLog](#dolog)
+* [logToConsole(#logtoconsole)
+* [doToast(#dotoast)
+* [callToast(#calltoast)
+* [getTile](#gettile)
+* [checkTile](#checktile)
+* [getExtraTile](#getextratile)
+* [checkPath](#checkpath)
+* [findPath](#findpath)
+* [getLocal](#getlocal)
+* [getInventory](#getinventory)
+* [getWorldObject](#getworldobject)
+* [getPlayerlist](#getplayerlist)
+* [getPlayerByNetID](#getplayerbynetid)
+* [getWorld](#getworld)
+* [getNpc](#getnpc)
+* [getCamera](#getcamera)
+* [setCamera](#setcamera)
+  -----------------------
