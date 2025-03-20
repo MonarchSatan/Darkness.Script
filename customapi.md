@@ -1,12 +1,12 @@
 # `functions`
 
 * [sendPacket](#sendpacket)
-* [sendPacketRaw(#sendpacketraw)
-* [sendVariant(#sendvariant)
+* [sendPacketRaw](#sendpacketraw)
+* [sendVariant](#sendvariant)
 * [doLog](#dolog)
 * [logToConsole(#logtoconsole)
-* [doToast(#dotoast)
-* [callToast(#calltoast)
+* [doToast](#dotoast)
+* [callToast](#calltoast)
 * [getTile](#gettile)
 * [checkTile](#checktile)
 * [getExtraTile](#getextratile)
@@ -21,4 +21,3 @@
 * [getNpc](#getnpc)
 * [getCamera](#getcamera)
 * [setCamera](#setcamera)
-  -----------------------
