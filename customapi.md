@@ -4,7 +4,7 @@
 * [sendPacketRaw](#sendpacketraw)
 * [sendVariant](#sendvariant)
 * [doLog](#dolog)
-* [logToConsole(#logtoconsole)
+* [logToConsole](#logtoconsole)
 * [doToast](#dotoast)
 * [callToast](#calltoast)
 * [getTile](#gettile)
